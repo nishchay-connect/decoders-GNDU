@@ -3,7 +3,7 @@
 // every other module (recognition, playback) reads from this single source.
 // ---------------------------------------------------------------------------
 
-export const VOCAB = [
+export const VOCAB = ["HAPPY",
   ...Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)), // A-Z
   ...Array.from({ length: 11 }, (_, i) => String(i)),                   // 0-10
   "HELLO", "THANK YOU", "PLEASE", "SORRY", "YES", "NO",
