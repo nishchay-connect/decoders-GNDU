@@ -57,45 +57,8 @@
   <button class="tab-btn" data-tab="voice-to-sign" role="tab" aria-selected="false">English → ISL</button>
 </div>
 
-<main>
-
-  <!-- ============================= PANEL 1: ISL -> ENGLISH (2 sections) ============================= -->
-  <section class="panel active" id="panel-sign-to-voice">
-
-    <div class="card">
-      <h3>Camera &amp; Recognition</h3>
-      <div class="video-wrap">
-        <video id="video" autoplay playsinline muted></video>
-        <canvas id="overlay" width="640" height="480"></canvas>
-      </div>
-      <div class="row" style="margin-top:14px;">
-        <button id="matchToggle" class="primary" disabled>▶ Start Recognizing</button>
-      </div>
-      <div class="status-line" id="camStatus">Loading camera…</div>
-      <hr class="divider">
-      <label class="checkline"><input type="checkbox" id="mirrorFixToggle" checked> Mirror fix (fallback — only used if your shoulders aren't visible to the camera)</label>
-      <small class="hint">Hand identity is normally figured out automatically from your pose (much more reliable). This toggle only matters if the camera is framed so tight that your shoulders aren't visible.</small>
-    </div>
-
-    <div class="card">
-      <h3>Recognized Text</h3>
-      <div class="status-line" id="liveSignLabel">Currently signing: —</div>
-      <textarea id="recognizedText" placeholder="Recognized signs build up here as you sign — edit or delete freely, it's a normal text box" style="min-height:110px; font-size:17px; margin-top:8px;"></textarea>
-      <div class="row" style="margin-top:10px;">
-        <button id="clearRecognizedBtn" class="ghost">Clear</button>
-        <div style="flex:1; min-width:140px;">
-          <select id="targetLangSign"></select>
-        </div>
-        <button id="listenOgBtn">🔊 Listen (English)</button>
-        <button id="listenTranslatedSignBtn" class="primary">🔊 Listen (Translated)</button>
-      </div>
-      <div class="status-line" id="translateSignStatus"></div>
-      <textarea id="translatedTextBox" readonly placeholder="Translated text will appear here after you click Listen (Translated)" style="min-height:70px; margin-top:10px; background:var(--surface-sunken);"></textarea>
-    </div>
-
-  </section>
-
-  <!-- ============================= PANEL 2: ENGLISH -> ISL (1 section) ============================= -->
+<main> 
+  <!-- ============================= PANEL : ENGLISH -> ISL (1 section) ============================= -->
   <section class="panel" id="panel-voice-to-sign">
 
     <div class="card">
